@@ -1,0 +1,182 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #000;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.container {
+    width: 325px;
+    margin: 25px 0;
+    background-color: #f5f6f7;
+    color: #0a0a23;
+    border: 1px solid #f5f6f7;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
+    padding: 20px;
+}
+
+/* Search Form */
+.output,
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-form {
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+    gap: 10px;
+}
+
+label {
+    align-self: center;
+    font-size: 0.9em;
+}
+
+
+
+/* Input part as per the sample */
+#search-input {
+    height: 40px;
+    padding-left: 10px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 14px 0;
+    width: 80px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #f5f6f7;
+    border: none;
+    cursor: pointer;
+}
+
+/* Output display */
+.output {
+    margin: 10px 0;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-container,
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.name-and-id {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.size {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.sprite-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#sprite {
+    max-width: 100%;
+    height: auto;
+}
+
+#types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.type {
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    min-width: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 550px) {
+    .container {
+        width: 450px;
+    }
+
+    #search-form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #search-input {
+        margin-right: 10px;
+    }
+}
